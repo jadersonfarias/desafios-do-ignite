@@ -1,0 +1,80 @@
+.container{
+    display: flex;
+    flex: 1;
+    gap: 0.75rem;
+    
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 1.2rem;
+    border-radius: 8px;
+
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+  
+   margin-bottom: 12px;
+
+}
+
+.container label {
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+  }
+
+.container div {
+    display: flex;
+}
+
+.container input[type="checkbox"]{
+    appearance: none;
+    border: 1px solid var(--blue-100);
+    box-shadow: 0 0 0 0;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+}
+
+.container input[type="checkbox"]:checked::before{
+   content: "✓";
+   font-size: 12px;
+   color: var(--gray-100);
+
+   position: absolute;
+   left: .50rem;
+   top: .3rem;
+}
+
+.container input[type="checkbox"]:checked{
+      background:var(--purple-200);
+  
+      border: 0;
+   
+ }
+
+
+
+.container label input:checked + p {
+   text-decoration: line-through;
+}
+
+.deleteButton{
+   background: none;
+   border: 0;
+   color: var(--gray-100);
+   line-height: 0;
+   border-radius: 4px;
+
+}
+
+.container button:hover{
+    color: var(--danger-100);
+    background: var(--gray-300);
+}
+
+.container button:focus{
+      box-shadow: none;
+}

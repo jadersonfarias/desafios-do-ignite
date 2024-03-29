@@ -1,0 +1,36 @@
+.tasks {
+    width: 46rem;
+    margin: 0  auto  ;
+
+}
+
+.inputTasks{
+    display: flex;
+    gap: 8px;
+    
+    input {
+        color: var(--gray-100);
+        background: var(--gray-500);
+        border-radius: 6px;
+        border: 0;
+        padding: 1rem;
+        width: 100%;    
+    }
+
+}
+
+.buttonPlus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: bold;
+
+    height: 54px;
+    width: 5.625rem;
+    border-radius: 6px;
+    border: 0;
+    background-color: var(--blue-100);
+}
